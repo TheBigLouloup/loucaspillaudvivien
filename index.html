@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Loucas Pillaud-Vivien</title>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Loucas Pillaud-Vivien</div>
+<div class="menu-item"><a href="index.html" class="current">Home</a></div>
+<div class="menu-item"><a href="about_me.html">About&nbsp;me</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Loucas Pillaud-Vivien</h1>
+</div>
+<table class="imgtable"><tr><td>
+<img src="Photo/tortue.jpg" alt="" width="300px" height="262px" />&nbsp;</td>
+<td align="left"><h2>Briefly</h2>
+<p>I am an assistant professor at Ecole des Ponts ParisTech and a researcher at CERMICS, in the Applied Probability team. Prior to this, I was a Courant Instructor/Flatiron fellow both at the Courant institute of NYU and the Flatiron Institute, where I work mainly with <a href="https://cims.nyu.edu/~bruna/" target=&ldquo;blank&rdquo;>Joan Bruna</a>. Before, I was a postdoc in the Theory of Machine Learning group of <a href="https://www.di.ens.fr/~flammarion/" target=&ldquo;blank&rdquo;>Nicolas Flammarion</a> at EPFL. I did my Ph.D. in the <a href="https://www.di.ens.fr/sierra/" target=&ldquo;blank&rdquo;>SIERRA Team</a>, under the supervision of <a href="http://www.di.ens.fr/~fbach/" target=&ldquo;blank&rdquo;>Francis Bach</a> and <a href="https://www.di.ens.fr/~rudi/" target=&ldquo;blank&rdquo;>Alessandro Rudi</a> on stochastic approximation for high dimensionnal learning problems.
+</p>
+<h2>Contact</h2>
+<ul>
+<li><p>Physical address: 6 et 8 avenue Blaise Pascal, Cité Descartes - Champs sur Marne. <a href="https://maps.app.goo.gl/3Yo9Xe4UZQpwH1466" target=&ldquo;blank&rdquo;>[Cermics]</a>.
+</p>
+</li>
+<li><p>E-mail: loucas.pillaud-vivien [at] enpc [dot] fr
+</p>
+</li>
+</ul>
+</td></tr></table>
+<h2>Research interests</h2>
+<p>My main research interests are centred around optimization, statistics and stochastic models. More precisely, here is are a selection of research topics I am interested in:
+</p>
+<ul>
+<li><p>Gradient flow for non-convex learning problems (as we barely understand them, why bother with discrete updates?)
+</p>
+</li>
+<li><p>Implicit bias of overparametrized architectures in optimization learning
+</p>
+</li>
+<li><p>Stochastic Differential Equations (and PDEs) and how they can model and help us understand machine learning problems
+</p>
+</li>
+<li><p>Stochastic approximations in Hilbert spaces
+</p>
+</li>
+<li><p>Kernel methods
+</p>
+</li>
+</ul>
+<h2>Selected Publications</h2>
+<p>For a complete list of my publications, <i>rendez-vous</i> to my <a href="https://scholar.google.com/citations?hl=en&amp;user=ioI9xpwAAAAJ" target=&ldquo;blank&rdquo;>Google Scholar</a> page. Do not worry, you'll find the same turtle photo there.
+</p>
+<p><p style="margin-bottom:1cm;"&gt; </p>
+</p>
+<ul>
+<li><p>A. Bietti, J. Bruna, L. Pillaud-Vivien.<br /><b> On Learning Gaussian Multi-index Models with Gradient Flow</b>. [<a href="https://arxiv.org/abs/2310.19793" target=&ldquo;blank&rdquo;>arxiv:2310.19793</a>], <i>Submitted</i>, 2023. <span class="toggle-trigger">[Show Abstract]<span> 
+<div class="toggle-wrap">
+We study gradient flow on the multi-index regression problem for high-dimensional Gaussian data. Multi-index functions consist of a composition of an unknown low-rank linear projection and an arbitrary unknown, low-dimensional link function. As such, they constitute a natural template for feature learning in neural networks.
+We consider a two-timescale algorithm, whereby the low-dimensional link function is learnt with a non-parametric model infinitely faster than the subspace parametrizing the low-rank projection. By appropriately exploiting the matrix semigroup structure arising over the subspace correlation matrices, we establish global convergence of the resulting Grassmannian population gradient flow dynamics, and provide a quantitative description of its associated &lsquo;saddle-to-saddle&rsquo; dynamics. Notably, the timescales associated with each saddle can be explicitly characterized in terms of an appropriate Hermite decomposition of the target link function. In contrast with these positive results, we also show that the related emph{planted} problem, where the link function is known and fixed, in fact has a rough optimization landscape, in which gradient flow dynamics might get trapped with high probability.
+</div>
+</p>
+</li>
+</ul>
+<ul>
+<li><p>M. Andriushchenko, A.V. Varre, L. Pillaud-Vivien, N. Flammarion.<br /><b> SGD with large step sizes learns sparse features</b>. [<a href="https://arxiv.org/abs/2210.05337" target=&ldquo;blank&rdquo;>arxiv:2210.05337</a>], <i>ICML</i>, 2023. <span class="toggle-trigger">[Show Abstract]<span> 
+<div class="toggle-wrap">
+We showcase important features of the dynamics of the Stochastic Gradient Descent (SGD) in the training of neural networks. We present empirical observations that commonly used large step sizes (i) may lead the iterates to jump from one side of a valley to the other causing loss stabilization, and (ii) this stabilization induces a hidden stochastic dynamics that biases it implicitly toward simple predictors. Furthermore, we show empirically that the longer large step sizes keep SGD high in the loss landscape valleys, the better the implicit regularization can operate and find sparse representations. Notably, no explicit regularization is used: the regularization effect comes solely from the SGD dynamics influenced by the large step sizes schedule. Therefore, these observations unveil how, through the step size schedules, both gradient and noise drive together the SGD dynamics through the loss landscape of neural networks. We justify these findings theoretically through the study of simple neural network models as well as qualitative arguments inspired from stochastic processes. This analysis allows us to shed new light on some common practices and observed phenomena when training deep networks.
+</div>
+</p>
+</li>
+</ul>
+<ul>
+<li><p>L. Pillaud-Vivien, F. Bach.<br /><b> Kernelized Diffusion maps</b>. [<a href="https://arxiv.org/abs/2302.06757" target=&ldquo;blank&rdquo;>arxiv:2302.06757</a>], <i>COLT</i>, 2023. <span class="toggle-trigger">[Show Abstract]<span> 
+<div class="toggle-wrap">
+Spectral clustering and diffusion maps are celebrated dimensionality reduction algorithms built on eigen-elements related to the diffusive structure of the data. The core of these procedures is the approximation of a Laplacian through a graph kernel approach, however this local average construction is known to be cursed by the high-dimension d. In this article, we build a different estimator of the Laplacian, via a reproducing kernel Hilbert space method, which adapts naturally to the regularity of the problem. We provide non-asymptotic statistical rates proving that the kernel estimator we build can circumvent the curse of dimensionality. Finally we discuss techniques (Nyström subsampling, Fourier features) that enable to reduce the computational cost of the estimator while not degrading its overall performance.
+</div>
+</p>
+</li>
+</ul>
+<ul>
+<li><p>E. Boursier, L. Pillaud-Vivien, N. Flammarion.<br /><b>Gradient flow dynamics of shallow ReLU networks for square loss and orthogonal inputs</b>. [<a href="https://arxiv.org/pdf/2206.00939.pdf" target=&ldquo;blank&rdquo;>arxiv:2206.00939</a>], <i>NeurIPS</i>, 2022. <span class="toggle-trigger">[Show Abstract]<span> 
+<div class="toggle-wrap">
+<b>Abstract:</b> The training of neural networks by gradient descent methods is a cornerstone of the deep learning revolution. Yet, despite some recent progress, a complete theory explaining its success is still missing. This article presents, for orthogonal input vectors, a precise description of the gradient flow dynamics of training one-hidden layer ReLU neural networks for the mean squared error at small initialisation. In this setting, despite non-convexity, we show that the gradient flow converges to zero loss and characterise its implicit bias towards minimum variation norm. Furthermore, some interesting phenomena are highlighted: a quantitative description of the initial alignment phenomenon and a proof that the process follows a specific saddle to saddle dynamics.
+</div>
+</p>
+</li>
+</ul>
+<ul>
+<li><p>L. Pillaud-Vivien, J.Reygner, N. Flammarion.<br /><b>Label noise (stochastic) gradient descent implicitly solves the Lasso for quadratic parametrisation</b>. [<a href="https://arxiv.org/pdf/2206.09841" target=&ldquo;blank&rdquo;>arxiv:2206.09841</a>], <i>COLT</i>, 2022. <span class="toggle-trigger">[Show Abstract]<span> 
+<div class="toggle-wrap">
+<b>Abstract:</b> Understanding the implicit bias of training algorithms is of crucial importance in order to explain the success of overparametrised neural networks. In this paper, we study the role of the label noise in the training dynamics of a quadratically parametrised model through its continuous time version. We explicitly characterise the solution chosen by the stochastic flow and prove that it implicitly solves a Lasso program. To fully complete our analysis, we provide nonasymptotic convergence guarantees for the dynamics as well as conditions for support recovery. We also give experimental results which support our theoretical claims. Our findings highlight the fact that structured noise can induce better generalisation and help explain the greater performances of stochastic dynamics as observed in practice.
+</div>
+</p>
+</li>
+</ul>
+<ul>
+<li><p>L. Pillaud-Vivien, A. Rudi, F. Bach.<br /><b>Statistical Optimality of Stochastic Gradient Descent on Hard Learning Problems through Multiple Passes</b>. [<a href="https://arxiv.org/abs/1805.10074" target=&ldquo;blank&rdquo;>arXiv:1805.10074</a>], <i>NeurIPS</i>, 2018. <span class="toggle-trigger">[Show Abstract]<span> 
+<div class="toggle-wrap">
+<b>Abstract:</b> We consider stochastic gradient descent (SGD) for least-squares regression with potentially several passes over the data. While several passes have been widely reported to perform practically better in terms of predictive performance on unseen data, the existing theoretical analysis of SGD suggests that a single pass is statistically optimal. While this is true for low-dimensional easy problems, we show that for hard problems, multiple passes lead to statistically optimal predictions while single pass does not; we also show that in these hard models, the optimal number of passes over the data increases with sample size. In order to define the notion of hardness and show that our predictive performances are optimal, we consider potentially infinite-dimensional models and notions typically associated to kernel methods, namely, the decay of eigenvalues of the covariance matrix of the features and the complexity of the optimal predictor as measured through the covariance matrix. We illustrate our results on synthetic experiments with non-linear kernel methods and on a classical benchmark with a linear model.
+</div>
+</p>
+</li>
+</ul>
+<h2>PhD Thesis</h2>
+<p>I defended my thesis in October 2020.
+</p>
+<p>You can download the final version of the manuscript via this link [<a href="Articles/These.pdf" target=&ldquo;blank&rdquo;>Thesis</a>].
+</p>
+<p>You can also have a look at the slides. [<a href="Articles/Presentation_these.pdf" target=&ldquo;blank&rdquo;>Slides</a>]
+</p>
+<h2>Some Presentations</h2>
+<ul>
+<li><p><b>Label noise (stochastic) gradient descent implicitly solves the Lasso for quadratic parametrisation</b><br /> [<a href="Presentations/COLT2022/Label_noise_Loucas.pdf" target=&ldquo;blank&rdquo;>Slides</a>]. <i>COLT</i>. July 2022.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Some results on the role of stochasticity in learning algorithms</b><br /> [<a href="Presentations/Birs_Banff/Pres_SGD_implicit_bias.pdf" target=&ldquo;blank&rdquo;>Slides</a>]. <i>Birs-Banff workshop</i>. May 2022.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Some results on the role of stochasticity in learning algorithms</b><br /> [<a href="Presentations/One_world_seminar_ML/Pres_SGD_implicit_bias.pdf" target=&ldquo;blank&rdquo;>Slides</a>]. <i>One world ML seminar</i>. March 2022.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Some results on the role of stochasticity in learning algorithms</b><br /> [<a href="Presentations/Implicit_bias_SGD_flatiron/Pres_SGD_implicit_bias.pdf" target=&ldquo;blank&rdquo;>Slides</a>]. <i>NYU-Flatiron</i>. January 2022.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Model order reduction by spectral gap optimization</b><br /> [<a href="Presentations/CEMRACS_Poinkernel/Poinkernel_slides.pdf" target=&ldquo;blank&rdquo;>Slides</a>]. <i>CEMRACS</i>. August 2021.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Implicit Bias of SGD for Diagonal Linear Networks: a Provable Benefit of Stochasticity</b><br /> [<a href="Presentations/Implicit_bias_SGD/Pres_SGD_implicit_bias.pdf" target=&ldquo;blank&rdquo;>Slides</a>]. <i>Theory of Deep Learning, EPFL</i>. June 2021.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Two results on Stochastic gradient descent in Hilbert spaces for Machine Learning problems</b><br /> [<a href="Presentations/Cermics/presentation_cermics.pdf" target=&ldquo;blank&rdquo;>Slides</a>]. <i>Cermics seminar, Ecole des Ponts</i>. November 2019.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Statistical Estimation of the Poincaré constant and Application to Sampling Multimodal Distributions.</b><br /> [<a href="Presentations/Poincare/Presentation_Sierra/poincare.pdf" target=&ldquo;blank&rdquo;>Slides</a>]. <i>Sierra group seminar, INRIA.</i> April 2019.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Statistical Optimality of Stochastic Gradient Descent through Multiple Passes.</b><br /> [<a href="Presentations/Multipass_SGD/Francis/francis_slides.pdf" target=&ldquo;blank&rdquo;>Slides</a>, <a href="Posters/poster_NIPS2018.pdf" target=&ldquo;blank&rdquo;>Poster</a>]. <i>Optimization and Statistical Learning, Workshop in Les Houches</i>. March 2019.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Langevin dynamics and applications to Machine Learning.</b><br /> [<a href="Presentations/Langevin_dynamics/Slides/slides.pdf" target=&ldquo;blank&rdquo;>Slides</a>]. <i>Sierra group seminar, INRIA.</i> February 2019.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Comparing Dynamics: Deep Neural Networks versus Glassy systems.</b><br /> [<a href="Presentations/Phystat_glassy_dnn/Glassy_dnn.pdf" target=&ldquo;blank&rdquo;>Slides</a>]. <i>Statistical Machine Learning in Paris (SMILE seminar).</i> December 2018.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Statistical Optimality of Stochastic Gradient Descent through Multiple Passes.</b><br /> [<a href="Presentations/Multipass_SGD/Francis/francis_slides.pdf" target=&ldquo;blank&rdquo;>Slides</a>, <a href="Posters/poster_NIPS2018.pdf" target=&ldquo;blank&rdquo;>Poster</a>]. <i>Advances in Neural Information Processing Systems (NeurIPS).</i> December 2018.
+</p>
+</li>
+</ul>
+<ul>
+<li><p><b>Exponential convergence of testing error for stochastic gradient methods.</b><br /> [<a href="Presentations/Expo_rate_SGD/COLT2018/presentation.pdf" target=&ldquo;blank&rdquo;>Slides</a>, <a href="https://www.youtube.com/watch?v=SksBrcD1Z0E" target=&ldquo;blank&rdquo;>Video</a>, <a href="Posters/poster_COLT2018.pdf" target=&ldquo;blank&rdquo;>Poster</a>]. <i>International Conference on Learning Theory (COLT).</i> July 2018.
+</p>
+</li>
+</ul>
+<h2>Review</h2>
+<p>Reviewer for Journals:
+</p>
+<ul>
+<li><p>Annals of Statistics
+</p>
+</li>
+</ul>
+<ul>
+<li><p>Journal of Machine Learning Research
+</p>
+</li>
+</ul>
+<ul>
+<li><p>Applied and Computational Harmonic Analysis
+</p>
+</li>
+</ul>
+<ul>
+<li><p>IoP Science: Machine Learning: Science and Technology 
+</p>
+</li>
+</ul>
+<p>Reviewer for Conferences:
+</p>
+<ul>
+<li><p>International Conference on Learning Representations (ICLR 2021)
+</p>
+</li>
+</ul>
+<ul>
+<li><p>Advances in Neural Information Processing Systems (NeurIPS 2019-20-21)
+</p>
+</li>
+</ul>
+<ul>
+<li><p>International Conference on Machine Learning (ICML 2020-21)
+</p>
+</li>
+</ul>
+<ul>
+<li><p>Algorithmic Learning Theory (ALT 2020)
+</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2024-02-21 18:40:02 CET, by <a href="https://github.com/wsshin/jemdoc_mathjax" target="blank">jemdoc+MathJax</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
