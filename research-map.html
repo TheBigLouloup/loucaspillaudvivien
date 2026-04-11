@@ -122,6 +122,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
   });
 
+  // Check URL for tab parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const tabParam = urlParams.get('tab');
+  if (tabParam === 'coauthors') {
+    document.querySelector('.graph-tab[data-tab="coauthors"]').click();
+  }
+
   const searchInput = document.getElementById('paper-search');
 
   searchInput.addEventListener('input', () => {
