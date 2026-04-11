@@ -4,6 +4,18 @@ Live at: **https://thebiglouloup.github.io/loucaspillaudvivien/**
 
 ---
 
+## Research Philosophy & The Joy of Graphs
+
+Faire de la recherche, c'est tisser des fils entre des idées qui, au premier abord, semblent n'avoir rien à voir les unes avec les autres. Gradient flows, online learning, variational inference, supervised learning... autant de territoires que j'ai eu le bonheur d'explorer, et qui — surprise ! — se parlent, se répondent, s'entrelacent joyeusement.
+
+Pour donner à voir ces intrications secrètes, j'ai créé un **graphe interactif de mes papiers** sur la page Research Map. Chaque nœud est un article, chaque arête une connexion thématique. C'est un peu mon cerveau mis à plat, une carte au trésor de mes obsessions scientifiques. Cliquez, explorez, perdez-vous : c'est fait pour ça !
+
+Et puis il y a les gens. Ah, les gens ! Depuis le début de ma carrière, j'ai eu l'immense chance de collaborer avec des co-auteurs formidables, de Paris à New York en passant par Lausanne. Je suis ridiculement fier de ce petit réseau humain, de ces amitiés scientifiques qui font que la recherche n'est jamais solitaire. Le **graphe des co-auteurs** est là pour célébrer tout ça : un joyeux spaghetti de collaborations, coloré par continent, où chaque nœud est une personne extraordinaire avec qui j'ai eu le privilège de réfléchir, de me tromper, et parfois même d'avoir raison.
+
+Bref : les maths, c'est collectif. Et c'est beau.
+
+---
+
 ## Project Structure
 
 ```
