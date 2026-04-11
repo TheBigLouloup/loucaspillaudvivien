@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loucas Pillaud-Vivien</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Mobile hamburger -->
+<input type="checkbox" id="sidebar-toggle" class="sidebar__toggle" aria-label="Toggle navigation">
+<label for="sidebar-toggle" class="sidebar__hamburger" aria-hidden="true">
+  <span></span><span></span><span></span>
+</label>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+  <a href="index.html" class="sidebar__name">Loucas<br>Pillaud-Vivien</a>
+  <div class="sidebar__title">Maître de conférences<br>ENPC / CERMICS</div>
+  <nav class="sidebar__nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="research-map.html">Research Map</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="sidebar__spacer"></div>
+  <div class="sidebar__footer">
+    <a href="https://scholar.google.com/citations?hl=fr&user=ioI9xpwAAAAJ" target="_blank">Scholar</a>
+  </div>
+</aside>
+
+<div class="layout">
+  <div></div><!-- sidebar placeholder -->
+  <main class="main">
+
+    <!-- Quote -->
+    <div class="quote-container" aria-live="polite"></div>
+
+    <!-- Briefly -->
+    <section class="section reveal">
+      <h2>Briefly</h2>
+      <div class="briefly">
+        <img src="img/photo.jpg" alt="Loucas Pillaud-Vivien" class="briefly__photo">
+        <div class="briefly__text" id="bio-content"></div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Contact -->
+    <section class="section reveal">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>
+          <span class="label">Email</span>
+          loucas.pillaud-vivien [at] enpc [dot] fr
+        </li>
+        <li>
+          <span class="label">Address</span>
+          Bureau 215, 6 et 8 avenue Blaise Pascal, Cité Descartes — <a href="https://maps.app.goo.gl/3Yo9Xe4UZQpwH1466" target="_blank">Cermics</a>
+        </li>
+        <li>
+          <span class="label">Scholar</span>
+          <a href="https://scholar.google.com/citations?hl=fr&user=ioI9xpwAAAAJ" target="_blank">Google Scholar</a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Research Interests -->
+    <section class="section reveal">
+      <h2>Research Interests</h2>
+      <div class="research-prose">
+        <p>My research sits at the intersection of optimization, probability and statistics, with a focus on understanding the mathematical mechanisms behind learning algorithms. I am particularly interested in the training dynamics of neural networks: how does gradient descent navigate non-convex landscapes, and why does it end up finding solutions that generalize? Since we barely understand gradient <em>flow</em> in these settings, I tend to start there before worrying about discrete updates.</p>
+        <p>A recurring theme in my work is the role of structure — geometric, algebraic, stochastic — in shaping the behavior of algorithms. This includes the implicit bias of overparametrized models (why does SGD favor simple solutions without being told to?), the interplay between architecture and the geometry of the loss landscape, and how the noise inherent to stochastic methods can actually help rather than hinder learning. I also have a lasting interest in kernel methods and spectral approaches, which offer a rich functional-analytic framework for these questions.</p>
+        <p>More recently, I have been working on single- and multi-index models as a natural testbed for feature learning in neural networks, and on variational inference methods. I enjoy problems where continuous-time dynamics, PDEs and stochastic differential equations shed light on fundamentally discrete algorithms.</p>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Selected Publications -->
+    <section class="section reveal">
+      <h2>Selected Publications</h2>
+      <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: var(--s4);">
+        For a complete list, <em>rendez-vous</em> to my <a href="https://scholar.google.com/citations?hl=en&user=ioI9xpwAAAAJ" target="_blank">Google Scholar</a> page.
+      </p>
+      <ul class="pub-list" id="selected-pubs"></ul>
+      <a href="research-map.html" class="see-all">See all papers &rarr;</a>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Presentations -->
+    <section class="section reveal">
+      <h2>Selected Presentations</h2>
+      <ul class="pres-list">
+        <li class="pres-item">
+          <span class="pres-title">Label noise (stochastic) gradient descent implicitly solves the Lasso for quadratic parametrisation</span>
+          <span class="pres-links"><a href="Presentations/COLT2022/Label_noise_Loucas.pdf" target="_blank">Slides</a></span>
+          <div class="pres-meta">COLT. July 2022.</div>
+        </li>
+        <li class="pres-item">
+          <span class="pres-title">Some results on the role of stochasticity in learning algorithms</span>
+          <span class="pres-links"><a href="Presentations/Birs_Banff/Pres_SGD_implicit_bias.pdf" target="_blank">Slides</a></span>
+          <div class="pres-meta">Birs-Banff workshop. May 2022.</div>
+        </li>
+        <li class="pres-item">
+          <span class="pres-title">Some results on the role of stochasticity in learning algorithms</span>
+          <span class="pres-links"><a href="Presentations/One_world_seminar_ML/Pres_SGD_implicit_bias.pdf" target="_blank">Slides</a></span>
+          <div class="pres-meta">One world ML seminar. March 2022.</div>
+        </li>
+        <li class="pres-item">
+          <span class="pres-title">Some results on the role of stochasticity in learning algorithms</span>
+          <span class="pres-links"><a href="Presentations/Implicit_bias_SGD_flatiron/Pres_SGD_implicit_bias.pdf" target="_blank">Slides</a></span>
+          <div class="pres-meta">NYU-Flatiron. January 2022.</div>
+        </li>
+        <li class="pres-item">
+          <span class="pres-title">Model order reduction by spectral gap optimization</span>
+          <span class="pres-links"><a href="Presentations/CEMRACS_Poinkernel/Poinkernel_slides.pdf" target="_blank">Slides</a></span>
+          <div class="pres-meta">CEMRACS. August 2021.</div>
+        </li>
+        <li class="pres-item">
+          <span class="pres-title">Implicit Bias of SGD for Diagonal Linear Networks: a Provable Benefit of Stochasticity</span>
+          <span class="pres-links"><a href="Presentations/Implicit_bias_SGD/Pres_SGD_implicit_bias.pdf" target="_blank">Slides</a></span>
+          <div class="pres-meta">Theory of Deep Learning, EPFL. June 2021.</div>
+        </li>
+        <li class="pres-item">
+          <span class="pres-title">Two results on Stochastic gradient descent in Hilbert spaces for Machine Learning problems</span>
+          <span class="pres-links"><a href="Presentations/Cermics/presentation_cermics.pdf" target="_blank">Slides</a></span>
+          <div class="pres-meta">Cermics seminar, Ecole des Ponts. November 2019.</div>
+        </li>
+        <li class="pres-item">
+          <span class="pres-title">Statistical Estimation of the Poincaré constant and Application to Sampling Multimodal Distributions</span>
+          <span class="pres-links"><a href="Presentations/Poincare/Presentation_Sierra/poincare.pdf" target="_blank">Slides</a></span>
+          <div class="pres-meta">Sierra group seminar, INRIA. April 2019.</div>
+        </li>
+        <li class="pres-item">
+          <span class="pres-title">Statistical Optimality of Stochastic Gradient Descent through Multiple Passes</span>
+          <span class="pres-links">
+            <a href="Presentations/Multipass_SGD/Francis/francis_slides.pdf" target="_blank">Slides</a>
+            <a href="Posters/poster_NIPS2018.pdf" target="_blank">Poster</a>
+          </span>
+          <div class="pres-meta">Optimization and Statistical Learning, Les Houches. March 2019.</div>
+        </li>
+        <li class="pres-item">
+          <span class="pres-title">Langevin dynamics and applications to Machine Learning</span>
+          <span class="pres-links"><a href="Presentations/Langevin_dynamics/Slides/slides.pdf" target="_blank">Slides</a></span>
+          <div class="pres-meta">Sierra group seminar, INRIA. February 2019.</div>
+        </li>
+        <li class="pres-item">
+          <span class="pres-title">Comparing Dynamics: Deep Neural Networks versus Glassy systems</span>
+          <span class="pres-links"><a href="Presentations/Phystat_glassy_dnn/Glassy_dnn.pdf" target="_blank">Slides</a></span>
+          <div class="pres-meta">Statistical Machine Learning in Paris (SMILE seminar). December 2018.</div>
+        </li>
+        <li class="pres-item">
+          <span class="pres-title">Statistical Optimality of Stochastic Gradient Descent through Multiple Passes</span>
+          <span class="pres-links">
+            <a href="Presentations/Multipass_SGD/Francis/francis_slides.pdf" target="_blank">Slides</a>
+            <a href="Posters/poster_NIPS2018.pdf" target="_blank">Poster</a>
+          </span>
+          <div class="pres-meta">NeurIPS. December 2018.</div>
+        </li>
+        <li class="pres-item">
+          <span class="pres-title">Exponential convergence of testing error for stochastic gradient methods</span>
+          <span class="pres-links">
+            <a href="Presentations/Expo_rate_SGD/COLT2018/presentation.pdf" target="_blank">Slides</a>
+            <a href="https://www.youtube.com/watch?v=SksBrcD1Z0E" target="_blank">Video</a>
+            <a href="Posters/poster_COLT2018.pdf" target="_blank">Poster</a>
+          </span>
+          <div class="pres-meta">COLT. July 2018.</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <ul class="footer__links">
+        <li><a href="https://scholar.google.com/citations?hl=fr&user=ioI9xpwAAAAJ" target="_blank">Google Scholar</a></li>
+      </ul>
+      <p>Loucas Pillaud-Vivien — ENPC / CERMICS</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="js/accordion.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const bioEl = document.getElementById('bio-content');
+  if (bioEl) loadMarkdown('data/bio.md', bioEl);
+});
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const list = document.getElementById('selected-pubs');
+  if (!list) return;
+
+  try {
+    const resp = await fetch('data/papers.json');
+    const papers = await resp.json();
+    const selected = papers.filter(p => p.selected);
+    selected.sort((a, b) => b.year - a.year);
+
+    selected.forEach((paper, i) => {
+      const li = document.createElement('li');
+      li.className = 'pub-item';
+
+      const authors = paper.authors.map(a =>
+        a === 'L. Pillaud-Vivien' ? '<strong>' + a + '</strong>' : a
+      ).join(', ');
+
+      const arxivLink = paper.arxiv
+        ? `<a href="https://arxiv.org/abs/${paper.arxiv}" target="_blank">arXiv:${paper.arxiv}</a>`
+        : '';
+
+      const abstractId = 'abs-' + i;
+      const hasAbstract = paper.abstract && paper.abstract.length > 0;
+
+      let abstractHTML = '';
+      if (hasAbstract) {
+        abstractHTML = `
+          <button class="accordion-trigger" aria-expanded="false" aria-controls="${abstractId}" tabindex="0">
+            <span class="chevron">&#9654;</span> Abstract
+          </button>
+          <div class="accordion-content" id="${abstractId}">
+            <div class="accordion-body">${paper.abstract}</div>
+          </div>`;
+      }
+
+      li.innerHTML = `
+        <div class="pub-title">${paper.title}</div>
+        <div class="pub-authors">${authors}</div>
+        <div class="pub-venue">${paper.venue}</div>
+        <div class="pub-links">
+          ${arxivLink}
+          ${abstractHTML}
+        </div>`;
+
+      list.appendChild(li);
+    });
+  } catch (e) {
+    list.innerHTML = '<li>Publications could not be loaded.</li>';
+  }
+});
+</script>
+
+</body>
+</html>

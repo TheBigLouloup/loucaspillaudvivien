@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Map — Loucas Pillaud-Vivien</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+  <script src="https://unpkg.com/layout-base/layout-base.js"></script>
+  <script src="https://unpkg.com/cose-base/cose-base.js"></script>
+  <script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+</head>
+<body>
+
+<input type="checkbox" id="sidebar-toggle" class="sidebar__toggle" aria-label="Toggle navigation">
+<label for="sidebar-toggle" class="sidebar__hamburger" aria-hidden="true">
+  <span></span><span></span><span></span>
+</label>
+
+<aside class="sidebar">
+  <a href="index.html" class="sidebar__name">Loucas<br>Pillaud-Vivien</a>
+  <div class="sidebar__title">Maître de conférences<br>ENPC / CERMICS</div>
+  <nav class="sidebar__nav">
+    <a href="index.html">Home</a>
+    <a href="research-map.html" class="active">Research Map</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="sidebar__spacer"></div>
+  <div class="sidebar__footer">
+    <a href="https://scholar.google.com/citations?hl=fr&user=ioI9xpwAAAAJ" target="_blank">Scholar</a>
+  </div>
+</aside>
+
+<div class="layout graph-page">
+  <div></div>
+  <main class="main">
+    <div class="quote-container" aria-live="polite"></div>
+    <h1 style="margin-bottom: var(--s4); font-size: 1.5rem;">Research Map</h1>
+
+    <div class="graph-tabs">
+      <button class="graph-tab active" data-tab="papers">Paper Graph</button>
+      <button class="graph-tab" data-tab="coauthors">Co-author Graph</button>
+    </div>
+
+    <div class="graph-legend" id="paper-legend">
+      <span class="legend-item"><span class="legend-shape circle"></span> Theoretical</span>
+      <span class="legend-item"><span class="legend-shape square"></span> Experimental</span>
+      <span class="legend-item"><span class="legend-shape diamond"></span> Mixed</span>
+      <span style="margin-left:8px; font-size:0.7rem; color:var(--text-muted);">Click a node to explore.</span>
+      <input type="text" class="filter-search" id="paper-search" placeholder="Search..." style="margin-left:auto; max-width:200px; font-size:0.75rem; padding:4px 8px;">
+    </div>
+
+    <div class="graph-legend" id="coauthor-legend" style="display:none;">
+      <span style="font-weight:500; margin-right:4px;">Region:</span>
+      <span class="legend-item"><span class="legend-color" style="background:#7AACDB"></span> France (Sierra, ENPC)</span>
+      <span class="legend-item"><span class="legend-color" style="background:#E0A98A"></span> Europe (EPFL, Bonn)</span>
+      <span class="legend-item"><span class="legend-color" style="background:#8FC09A"></span> USA (NYU, Princeton, Flatiron)</span>
+      <span style="margin-left:12px; font-size:0.7rem; color:var(--text-muted);">Node size = shared papers. Drag nodes to explore.</span>
+    </div>
+
+    <div class="graph-layout">
+      <div class="graph-canvas" id="graph-container">
+        <div id="cy-papers" style="width:100%; height:100%; background:#1a1e2e;"></div>
+        <div id="cy-coauthors" style="width:100%; height:100%; display:none; background:#1a1e2e;"></div>
+        <div class="graph-controls">
+          <button id="zoom-in" title="Zoom in">+</button>
+          <button id="zoom-out" title="Zoom out">&minus;</button>
+          <button id="zoom-reset" title="Reset view">&#8634;</button>
+        </div>
+      </div>
+      <div class="graph-panel" id="info-panel">
+        <h3>Details</h3>
+        <p class="panel-empty">Click a node to see details.</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="js/research-graph.js"></script>
+<script src="js/coauthor-graph.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  const papersContainer = document.getElementById('cy-papers');
+  const coauthorsContainer = document.getElementById('cy-coauthors');
+  const panel = document.getElementById('info-panel');
+
+  await initPaperGraph(papersContainer, panel);
+
+  const tabs = document.querySelectorAll('.graph-tab');
+  const paperLegend = document.getElementById('paper-legend');
+  const coauthorLegend = document.getElementById('coauthor-legend');
+  let coauthorInitialized = false;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', async () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const target = tab.dataset.tab;
+      panel.innerHTML = '<h3>Details</h3><p class="panel-empty">Click a node to see details.</p>';
+
+      if (target === 'papers') {
+        papersContainer.style.display = 'block';
+        coauthorsContainer.style.display = 'none';
+        paperLegend.style.display = 'flex';
+        coauthorLegend.style.display = 'none';
+        if (paperCy) paperCy.resize();
+      } else {
+        papersContainer.style.display = 'none';
+        coauthorsContainer.style.display = 'block';
+        paperLegend.style.display = 'none';
+        coauthorLegend.style.display = 'flex';
+        if (!coauthorInitialized) {
+          await initCoauthorGraph(coauthorsContainer, panel);
+          coauthorInitialized = true;
+        }
+        if (coauthorCy) coauthorCy.resize();
+      }
+    });
+  });
+
+  const searchInput = document.getElementById('paper-search');
+
+  searchInput.addEventListener('input', () => {
+    filterPaperGraph([], searchInput.value);
+  });
+
+  document.getElementById('zoom-in').addEventListener('click', () => {
+    const cy = papersContainer.style.display !== 'none' ? paperCy : coauthorCy;
+    if (cy) cy.zoom(cy.zoom() * 1.3);
+  });
+  document.getElementById('zoom-out').addEventListener('click', () => {
+    const cy = papersContainer.style.display !== 'none' ? paperCy : coauthorCy;
+    if (cy) cy.zoom(cy.zoom() / 1.3);
+  });
+  document.getElementById('zoom-reset').addEventListener('click', () => {
+    const cy = papersContainer.style.display !== 'none' ? paperCy : coauthorCy;
+    if (cy) cy.fit(undefined, 30);
+  });
+});
+</script>
+
+</body>
+</html>

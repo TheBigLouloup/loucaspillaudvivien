@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acknowledgments — Loucas Pillaud-Vivien</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<input type="checkbox" id="sidebar-toggle" class="sidebar__toggle" aria-label="Toggle navigation">
+<label for="sidebar-toggle" class="sidebar__hamburger" aria-hidden="true">
+  <span></span><span></span><span></span>
+</label>
+
+<aside class="sidebar">
+  <a href="index.html" class="sidebar__name">Loucas<br>Pillaud-Vivien</a>
+  <div class="sidebar__title">Maître de conférences<br>ENPC / CERMICS</div>
+  <nav class="sidebar__nav">
+    <a href="index.html">Home</a>
+    <a href="research-map.html">Research Map</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="blog.html">Blog</a>
+    <a href="acknowledgments.html" class="active">Acknowledgments</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="sidebar__spacer"></div>
+  <div class="sidebar__footer">
+    <a href="https://scholar.google.com/citations?hl=fr&user=ioI9xpwAAAAJ" target="_blank">Scholar</a>
+  </div>
+</aside>
+
+<div class="layout">
+  <div></div>
+  <main class="main page-content">
+    <div class="quote-container" aria-live="polite"></div>
+    <h1>Acknowledgments</h1>
+    <p class="ack-intro">
+      Ces remerciements se réordonnent aléatoirement à chaque visite — chaque lecture compose un texte différent.
+    </p>
+    <button id="shuffle-btn" class="shuffle-btn">Remélanger</button>
+    <div class="ack-grid" id="ack-grid"></div>
+    <footer class="footer">
+      <p>Loucas Pillaud-Vivien — ENPC / CERMICS</p>
+    </footer>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="js/shuffle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)",
+      "Bash(python3 -m http.server 8080)",
+      "Bash(echo \"Server PID: $!\")",
+      "WebFetch(domain:localhost)",
+      "Bash(curl -s http://localhost:8080/index.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/css/style.css)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/js/main.js)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/data/papers.json)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/data/bio.md)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/data/quotes.json)",
+      "Bash(open:*)",
+      "Bash(ls:*)",
+      "Bash(kill 56133)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/index.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/research-map.html)",
+      "Bash(kill 56344)",
+      "Bash(curl:*)"
+    ]
+  }
+}

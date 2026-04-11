@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimax Animations — Loucas Pillaud-Vivien</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<input type="checkbox" id="sidebar-toggle" class="sidebar__toggle" aria-label="Toggle navigation">
+<label for="sidebar-toggle" class="sidebar__hamburger" aria-hidden="true">
+  <span></span><span></span><span></span>
+</label>
+
+<aside class="sidebar">
+  <a href="index.html" class="sidebar__name">Loucas<br>Pillaud-Vivien</a>
+  <div class="sidebar__title">Maître de conférences<br>ENPC / CERMICS</div>
+  <nav class="sidebar__nav">
+    <a href="index.html">Home</a>
+    <a href="research-map.html">Research Map</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="sidebar__spacer"></div>
+  <div class="sidebar__footer">
+    <a href="https://scholar.google.com/citations?hl=fr&user=ioI9xpwAAAAJ" target="_blank">Scholar</a>
+  </div>
+</aside>
+
+<div class="layout">
+  <div></div>
+  <main class="main page-content">
+    <div class="quote-container" aria-live="polite"></div>
+    
+    <h1>Oscillating solutions to the mean-field Langevin descent-ascent flow</h1>
+    
+    <p style="font-style: italic; color: var(--text-light); margin-bottom: var(--s4);">
+      Jean-Christophe Mourrat, Loucas Pillaud-Vivien
+    </p>
+
+    <p style="line-height: 1.7; margin-bottom: var(--s5);">
+      We study a particle approximation of the mean-field Langevin descent-ascent dynamics on ℝ², where the payoff function is shaped as a double well in each coordinate. When the coupling α is sufficiently strong and the entropic regularization ε sufficiently small, the deterministic dynamics admits a limit cycle, and we show that the mean-field dynamics stay close to this cyclic behavior and do not converge.
+    </p>
+
+    <p style="line-height: 1.7; margin-bottom: var(--s5);">
+      Below we display phase portrait animations of 500 interacting particles (α = 1.5) for two noise levels. For <strong>ε = 0.25</strong> (left), the particles concentrate around the limit cycle of the deterministic system (black curve). For <strong>ε = 0.5</strong> (right), the noise dominates and the particles spread out toward a stationary measure resembling a mixture of four Gaussians.
+    </p>
+
+    <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: var(--s5);">
+      <div style="text-align: center;">
+        <h2 style="font-size: 1.2rem; margin-bottom: var(--s3);">ε = 0.25</h2>
+        <video controls loop style="max-width: 100%; width: 480px; border-radius: 8px; border: 1px solid var(--border);">
+          <source src="Figures/minimax/phase_portrait_eps=0.25_alpha=1.5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div style="text-align: center;">
+        <h2 style="font-size: 1.2rem; margin-bottom: var(--s3);">ε = 0.5</h2>
+        <video controls loop style="max-width: 100%; width: 480px; border-radius: 8px; border: 1px solid var(--border);">
+          <source src="Figures/minimax/phase_portrait_eps=0.5_alpha=1.5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/typewriter.js"></script>
+
+</body>
+</html>

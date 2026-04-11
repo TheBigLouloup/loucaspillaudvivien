@@ -1,5 +1,7 @@
 ## Short Curriculum Vitae
 
+- **2026** — Laureate of the ANR JCJC GALA grant (more than 350 k€).
+- **2025** — Recipient of CNRS PEPS JCJC grant.
 - **Since 2024** — Assistant professor at Ecole des Ponts ParisTech, researcher at CERMICS.
 - **2022–2023** — Courant Instructor and Flatiron Fellow, mostly working with [Joan Bruna](https://cims.nyu.edu/~bruna/), Professor at the Courant Institute and the Center for Data Science, New York University.
 - **2020–2022** — Postdoc in machine learning under the supervision of [Nicolas Flammarion](https://www.di.ens.fr/~flammarion/) in the Theory of Machine Learning team of EPFL.

@@ -4,7 +4,8 @@
     "name": "Francis Bach",
     "url": "https://www.di.ens.fr/~fbach/",
     "role": "PhD advisor",
-    "period": "sierra",
+    "period": "france",
+    "affiliation": "Sierra",
     "papers": ["expo-convergence-2018", "multipass-sgd-2018", "poincare-2019", "laplacian-ssl-2021", "kernelized-diffusion-2023", "relu-weakly-2025"]
   },
   {
@@ -12,7 +13,8 @@
     "name": "Alessandro Rudi",
     "url": "https://www.di.ens.fr/~rudi/",
     "role": "PhD advisor",
-    "period": "sierra",
+    "period": "france",
+    "affiliation": "Sierra",
     "papers": ["expo-convergence-2018", "multipass-sgd-2018", "poincare-2019", "laplacian-ssl-2021"]
   },
   {
@@ -20,7 +22,8 @@
     "name": "Nicolas Flammarion",
     "url": "https://www.di.ens.fr/~flammarion/",
     "role": "Postdoc advisor",
-    "period": "epfl",
+    "period": "europe",
+    "affiliation": "EPFL",
     "papers": ["implicit-bias-sgd-2021", "last-iterate-2021", "lasso-2022", "relu-gf-2022", "sgd-large-steps-2023", "spectral-bias-linear-2023"]
   },
   {
@@ -28,7 +31,8 @@
     "name": "Joan Bruna",
     "url": "https://cims.nyu.edu/~bruna/",
     "role": "Postdoc advisor",
-    "period": "nyu",
+    "period": "usa",
+    "affiliation": "NYU",
     "papers": ["multi-index-gf-2023", "single-index-nongaussian-2023", "comp-stat-gaps-2024"]
   },
   {
@@ -36,7 +40,8 @@
     "name": "Scott Pesme",
     "url": "",
     "role": "Collaborator",
-    "period": "epfl",
+    "period": "europe",
+    "affiliation": "EPFL",
     "papers": ["implicit-bias-sgd-2021"]
   },
   {
@@ -44,7 +49,8 @@
     "name": "Etienne Boursier",
     "url": "",
     "role": "Collaborator",
-    "period": "epfl",
+    "period": "europe",
+    "affiliation": "EPFL",
     "papers": ["relu-gf-2022"]
   },
   {
@@ -52,15 +58,17 @@
     "name": "Julien Reygner",
     "url": "",
     "role": "Collaborator",
-    "period": "epfl",
-    "papers": ["lasso-2022"]
+    "period": "france",
+    "affiliation": "ENPC",
+    "papers": ["lasso-2022", "fleming-viot-2018"]
   },
   {
     "id": "aditya-varre",
     "name": "Aditya Vardhan Varre",
     "url": "",
     "role": "Collaborator",
-    "period": "epfl",
+    "period": "europe",
+    "affiliation": "EPFL",
     "papers": ["last-iterate-2021", "sgd-large-steps-2023", "spectral-bias-linear-2023"]
   },
   {
@@ -68,7 +76,8 @@
     "name": "Maksym Andriushchenko",
     "url": "",
     "role": "Collaborator",
-    "period": "epfl",
+    "period": "europe",
+    "affiliation": "EPFL",
     "papers": ["sgd-large-steps-2023"]
   },
   {
@@ -76,7 +85,8 @@
     "name": "Maria-Luiza Vladarean",
     "url": "",
     "role": "Collaborator",
-    "period": "epfl",
+    "period": "europe",
+    "affiliation": "EPFL",
     "papers": ["spectral-bias-linear-2023"]
   },
   {
@@ -84,7 +94,8 @@
     "name": "Alberto Bietti",
     "url": "",
     "role": "Collaborator",
-    "period": "nyu",
+    "period": "usa",
+    "affiliation": "NYU",
     "papers": ["multi-index-gf-2023"]
   },
   {
@@ -92,7 +103,8 @@
     "name": "Aaron Zweig",
     "url": "",
     "role": "Collaborator",
-    "period": "nyu",
+    "period": "usa",
+    "affiliation": "NYU",
     "papers": ["single-index-nongaussian-2023"]
   },
   {
@@ -100,7 +112,8 @@
     "name": "Alex Damian",
     "url": "",
     "role": "Collaborator",
-    "period": "nyu",
+    "period": "usa",
+    "affiliation": "Princeton",
     "papers": ["comp-stat-gaps-2024"]
   },
   {
@@ -108,7 +121,8 @@
     "name": "Jason D. Lee",
     "url": "",
     "role": "Collaborator",
-    "period": "nyu",
+    "period": "usa",
+    "affiliation": "Princeton",
     "papers": ["comp-stat-gaps-2024"]
   },
   {
@@ -116,7 +130,8 @@
     "name": "Diana Cai",
     "url": "",
     "role": "Collaborator",
-    "period": "nyu",
+    "period": "usa",
+    "affiliation": "Flatiron",
     "papers": ["batch-and-match-2024"]
   },
   {
@@ -124,7 +139,8 @@
     "name": "Chirag Modi",
     "url": "",
     "role": "Collaborator",
-    "period": "nyu",
+    "period": "usa",
+    "affiliation": "Flatiron",
     "papers": ["batch-and-match-2024"]
   },
   {
@@ -132,15 +148,17 @@
     "name": "Charles C. Margossian",
     "url": "",
     "role": "Collaborator",
-    "period": "nyu",
-    "papers": ["batch-and-match-2024", "vi-ordering-2024"]
+    "period": "usa",
+    "affiliation": "Flatiron",
+    "papers": ["batch-and-match-2024", "vi-jmlr-2025"]
   },
   {
     "id": "robert-gower",
     "name": "Robert M. Gower",
     "url": "",
     "role": "Collaborator",
-    "period": "nyu",
+    "period": "usa",
+    "affiliation": "Flatiron",
     "papers": ["batch-and-match-2024"]
   },
   {
@@ -148,7 +166,8 @@
     "name": "David M. Blei",
     "url": "",
     "role": "Collaborator",
-    "period": "nyu",
+    "period": "usa",
+    "affiliation": "Flatiron",
     "papers": ["batch-and-match-2024"]
   },
   {
@@ -156,15 +175,17 @@
     "name": "Lawrence K. Saul",
     "url": "",
     "role": "Collaborator",
-    "period": "nyu",
-    "papers": ["batch-and-match-2024", "vi-ordering-2024"]
+    "period": "usa",
+    "affiliation": "Flatiron",
+    "papers": ["batch-and-match-2024", "vi-jmlr-2025"]
   },
   {
     "id": "vivien-cabannes",
     "name": "Vivien Cabannes",
     "url": "",
     "role": "Collaborator",
-    "period": "sierra",
+    "period": "france",
+    "affiliation": "Sierra",
     "papers": ["laplacian-ssl-2021"]
   },
   {
@@ -172,15 +193,17 @@
     "name": "Tony Lelièvre",
     "url": "",
     "role": "Collaborator",
-    "period": "sierra",
-    "papers": ["poincare-2019"]
+    "period": "france",
+    "affiliation": "ENPC",
+    "papers": ["poincare-2019", "fleming-viot-2018"]
   },
   {
     "id": "gabriel-stoltz",
     "name": "Gabriel Stoltz",
     "url": "",
     "role": "Collaborator",
-    "period": "sierra",
+    "period": "france",
+    "affiliation": "ENPC",
     "papers": ["poincare-2019"]
   },
   {
@@ -188,15 +211,17 @@
     "name": "Adrien Schertzer",
     "url": "",
     "role": "Collaborator",
-    "period": "enpc",
+    "period": "europe",
+    "affiliation": "Bonn",
     "papers": ["sde-sgd-2024", "joint-single-index-2025"]
   },
   {
     "id": "leo-dana",
     "name": "Léo Dana",
     "url": "",
-    "role": "Collaborator",
-    "period": "enpc",
+    "role": "PhD student",
+    "period": "france",
+    "affiliation": "Sierra",
     "papers": ["relu-weakly-2025"]
   }
 ]
