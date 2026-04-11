@@ -1,0 +1,202 @@
+[
+  {
+    "id": "francis-bach",
+    "name": "Francis Bach",
+    "url": "https://www.di.ens.fr/~fbach/",
+    "role": "PhD advisor",
+    "period": "sierra",
+    "papers": ["expo-convergence-2018", "multipass-sgd-2018", "poincare-2019", "laplacian-ssl-2021", "kernelized-diffusion-2023", "relu-weakly-2025"]
+  },
+  {
+    "id": "alessandro-rudi",
+    "name": "Alessandro Rudi",
+    "url": "https://www.di.ens.fr/~rudi/",
+    "role": "PhD advisor",
+    "period": "sierra",
+    "papers": ["expo-convergence-2018", "multipass-sgd-2018", "poincare-2019", "laplacian-ssl-2021"]
+  },
+  {
+    "id": "nicolas-flammarion",
+    "name": "Nicolas Flammarion",
+    "url": "https://www.di.ens.fr/~flammarion/",
+    "role": "Postdoc advisor",
+    "period": "epfl",
+    "papers": ["implicit-bias-sgd-2021", "last-iterate-2021", "lasso-2022", "relu-gf-2022", "sgd-large-steps-2023", "spectral-bias-linear-2023"]
+  },
+  {
+    "id": "joan-bruna",
+    "name": "Joan Bruna",
+    "url": "https://cims.nyu.edu/~bruna/",
+    "role": "Postdoc advisor",
+    "period": "nyu",
+    "papers": ["multi-index-gf-2023", "single-index-nongaussian-2023", "comp-stat-gaps-2024"]
+  },
+  {
+    "id": "scott-pesme",
+    "name": "Scott Pesme",
+    "url": "",
+    "role": "Collaborator",
+    "period": "epfl",
+    "papers": ["implicit-bias-sgd-2021"]
+  },
+  {
+    "id": "etienne-boursier",
+    "name": "Etienne Boursier",
+    "url": "",
+    "role": "Collaborator",
+    "period": "epfl",
+    "papers": ["relu-gf-2022"]
+  },
+  {
+    "id": "julien-reygner",
+    "name": "Julien Reygner",
+    "url": "",
+    "role": "Collaborator",
+    "period": "epfl",
+    "papers": ["lasso-2022"]
+  },
+  {
+    "id": "aditya-varre",
+    "name": "Aditya Vardhan Varre",
+    "url": "",
+    "role": "Collaborator",
+    "period": "epfl",
+    "papers": ["last-iterate-2021", "sgd-large-steps-2023", "spectral-bias-linear-2023"]
+  },
+  {
+    "id": "maksym-andriushchenko",
+    "name": "Maksym Andriushchenko",
+    "url": "",
+    "role": "Collaborator",
+    "period": "epfl",
+    "papers": ["sgd-large-steps-2023"]
+  },
+  {
+    "id": "maria-luiza-vladarean",
+    "name": "Maria-Luiza Vladarean",
+    "url": "",
+    "role": "Collaborator",
+    "period": "epfl",
+    "papers": ["spectral-bias-linear-2023"]
+  },
+  {
+    "id": "alberto-bietti",
+    "name": "Alberto Bietti",
+    "url": "",
+    "role": "Collaborator",
+    "period": "nyu",
+    "papers": ["multi-index-gf-2023"]
+  },
+  {
+    "id": "aaron-zweig",
+    "name": "Aaron Zweig",
+    "url": "",
+    "role": "Collaborator",
+    "period": "nyu",
+    "papers": ["single-index-nongaussian-2023"]
+  },
+  {
+    "id": "alex-damian",
+    "name": "Alex Damian",
+    "url": "",
+    "role": "Collaborator",
+    "period": "nyu",
+    "papers": ["comp-stat-gaps-2024"]
+  },
+  {
+    "id": "jason-lee",
+    "name": "Jason D. Lee",
+    "url": "",
+    "role": "Collaborator",
+    "period": "nyu",
+    "papers": ["comp-stat-gaps-2024"]
+  },
+  {
+    "id": "diana-cai",
+    "name": "Diana Cai",
+    "url": "",
+    "role": "Collaborator",
+    "period": "nyu",
+    "papers": ["batch-and-match-2024"]
+  },
+  {
+    "id": "chirag-modi",
+    "name": "Chirag Modi",
+    "url": "",
+    "role": "Collaborator",
+    "period": "nyu",
+    "papers": ["batch-and-match-2024"]
+  },
+  {
+    "id": "charles-margossian",
+    "name": "Charles C. Margossian",
+    "url": "",
+    "role": "Collaborator",
+    "period": "nyu",
+    "papers": ["batch-and-match-2024", "vi-ordering-2024"]
+  },
+  {
+    "id": "robert-gower",
+    "name": "Robert M. Gower",
+    "url": "",
+    "role": "Collaborator",
+    "period": "nyu",
+    "papers": ["batch-and-match-2024"]
+  },
+  {
+    "id": "david-blei",
+    "name": "David M. Blei",
+    "url": "",
+    "role": "Collaborator",
+    "period": "nyu",
+    "papers": ["batch-and-match-2024"]
+  },
+  {
+    "id": "lawrence-saul",
+    "name": "Lawrence K. Saul",
+    "url": "",
+    "role": "Collaborator",
+    "period": "nyu",
+    "papers": ["batch-and-match-2024", "vi-ordering-2024"]
+  },
+  {
+    "id": "vivien-cabannes",
+    "name": "Vivien Cabannes",
+    "url": "",
+    "role": "Collaborator",
+    "period": "sierra",
+    "papers": ["laplacian-ssl-2021"]
+  },
+  {
+    "id": "tony-lelievre",
+    "name": "Tony Lelièvre",
+    "url": "",
+    "role": "Collaborator",
+    "period": "sierra",
+    "papers": ["poincare-2019"]
+  },
+  {
+    "id": "gabriel-stoltz",
+    "name": "Gabriel Stoltz",
+    "url": "",
+    "role": "Collaborator",
+    "period": "sierra",
+    "papers": ["poincare-2019"]
+  },
+  {
+    "id": "adrien-schertzer",
+    "name": "Adrien Schertzer",
+    "url": "",
+    "role": "Collaborator",
+    "period": "enpc",
+    "papers": ["sde-sgd-2024", "joint-single-index-2025"]
+  },
+  {
+    "id": "leo-dana",
+    "name": "Léo Dana",
+    "url": "",
+    "role": "Collaborator",
+    "period": "enpc",
+    "papers": ["relu-weakly-2025"]
+  }
+]
