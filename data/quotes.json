@@ -280,5 +280,17 @@
     "author": "Nikita Khrouchtchev à Richard Nixon",
     "source": "",
     "url": ""
+  },
+  {
+    "text": "Le résultat d'une substitution totale du mensonge à la vérité n'est pas que le mensonge sera accepté comme vrai—c'est que le sens même par lequel nous nous orientons dans le monde réel se trouve détruit.",
+    "author": "Hannah Arendt",
+    "source": "Les Origines du totalitarisme.",
+    "url": ""
+  },
+  {
+    "text": "Error while loading conda entry point: conda-libmamba-solver (dlopen(/opt/anaconda3/lib/python3.12/site-packages/libmambapy/bindings.cpython-312-darwin.so, 0x0002): Library not loaded: @rpath/libarchive.19.dylib\n  Referenced from: <C6FFB0DE-2F95-397A-80F7-4F74339F6DC5> /opt/anaconda3/lib/libmamba.2.0.0.dylib\n  Reason: tried: '/opt/anaconda3/lib/libarchive.19.dylib' (no such file), '/opt/anaconda3/lib/python3.12/site-packages/libmambapy/../../../libarchive.19.dylib' (no such file), '/opt/anaconda3/bin/../lib/libarchive.19.dylib' (no such file), '/usr/local/lib/libarchive.19.dylib' (no such file), '/usr/lib/libarchive.19.dylib' (no such file, not in dyld cache))",
+    "author": "Adrien Schertzer",
+    "source": "Aphorisme livré à l'ouverture du terminal, (base) un mardi matin",
+    "url": ""
   }
 ]
