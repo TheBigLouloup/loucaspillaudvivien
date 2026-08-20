@@ -903,3 +903,32 @@ p:last-child { margin-bottom: 0; }
   .pub-item { break-inside: avoid; }
   a { color: var(--text); }
 }
+
+/* ============================================================
+   Media figure (video / image interludes)
+   ============================================================ */
+.media-figure {
+  margin: var(--s4) auto 0;
+  max-width: 460px;
+}
+.media-figure__media {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 20px rgba(45, 48, 56, 0.08);
+}
+.media-figure figcaption {
+  margin-top: var(--s2);
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+}
+
+@media (max-width: 860px) {
+  .media-figure { max-width: 100%; }
+}
