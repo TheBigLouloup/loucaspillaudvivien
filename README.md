@@ -175,14 +175,16 @@ Each coauthor object:
 2. Blog page will load it automatically
 
 ### Update the "Acheter ou louer ?" simulator
-The only page with a build step. Source project lives outside this repo (`~/Desktop/achat-vs-location`,
-React + Vite + recharts; see its own `CLAUDE.md`). To publish a new version:
+The only page with a build step. Source project lives outside this repo, in its own private repository
+(`TheBigLouloup/achat-vs-location`, cloned at `~/Desktop/achat-vs-location`; React + Vite + recharts,
+see its `CLAUDE.md`). To publish a new version:
 ```bash
 cd ~/Desktop/achat-vs-location
-npm run check && npm run build          # model regression test, then build (vite base is "./")
-rm -rf ~/loucaspillaudvivien/acheter-ou-louer/assets
-cp -R dist/index.html dist/assets ~/loucaspillaudvivien/acheter-ou-louer/
+npm run deploy        # model regression test, build, then replaces index.html + assets/ here
 ```
+It refuses to copy anything if the model regression test fails, and prints the git commands to run next.
+Then commit and push from this repo as usual.
+
 The dark bar with the back link is in the source project's `index.html`, outside the React root.
 Not linked from anywhere on the site: reachable only at `/acheter-ou-louer/`.
 
