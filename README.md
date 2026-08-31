@@ -14,6 +14,7 @@ Live at: **https://thebiglouloup.github.io/loucaspillaudvivien/**
 ├── blog.html               # Blog page (loads from data/blog/)
 ├── minimax_animations.html # Minimax research animations
 ├── acknowledgments.html    # Acknowledgments (hidden from nav)
+├── acheter-ou-louer/       # "Acheter ou louer ?" simulator (hidden from nav, built React app)
 │
 ├── css/
 │   └── style.css           # All site styling
@@ -172,6 +173,18 @@ Each coauthor object:
 ### Add blog post
 1. Create new `.md` file in `data/blog/`
 2. Blog page will load it automatically
+
+### Update the "Acheter ou louer ?" simulator
+The only page with a build step. Source project lives outside this repo (`~/Desktop/achat-vs-location`,
+React + Vite + recharts; see its own `CLAUDE.md`). To publish a new version:
+```bash
+cd ~/Desktop/achat-vs-location
+npm run check && npm run build          # model regression test, then build (vite base is "./")
+rm -rf ~/loucaspillaudvivien/acheter-ou-louer/assets
+cp -R dist/index.html dist/assets ~/loucaspillaudvivien/acheter-ou-louer/
+```
+The dark bar with the back link is in the source project's `index.html`, outside the React root.
+Not linked from anywhere on the site: reachable only at `/acheter-ou-louer/`.
 
 ---
 
