@@ -42,6 +42,7 @@ Live at: **https://thebiglouloup.github.io/loucaspillaudvivien/**
 │   └── photo.jpg           # Profile photo
 │
 ├── Articles/               # PDF files of papers
+├── CV/                     # CV-Loucas.pdf (linked from sidebar, About, Contact) + LaTeX source
 ├── Figures/                # Research figures/videos
 │   └── minimax/            # Minimax animation videos
 │
@@ -169,6 +170,11 @@ Each coauthor object:
 ### Update CV/Teaching
 1. Edit `data/about.md` or `data/teaching.md`
 2. Use standard markdown syntax
+
+### Update the CV PDF
+1. Edit and recompile `CV/CV-Loucas.tex` (moderncv) — the output `CV/CV-Loucas.pdf` is what the site links to
+2. Keep the filename `CV-Loucas.pdf`: it is linked from the sidebar footer of every page, the About header and the Contact list
+3. LaTeX build files (`.aux`, `.log`, `.fdb_latexmk`, `.fls`, `.out`, …) are ignored by `.gitignore`
 
 ### Add blog post
 1. Create new `.md` file in `data/blog/`
